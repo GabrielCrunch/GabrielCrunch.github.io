@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://mateus7g.github.io/crp-iframe-player/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Crunchyroll Player</title>
+	<link href="./crp-iframe-player_files/css2" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./crp-iframe-player_files/player.css">
+	<link rel="stylesheet" type="text/css" href="./crp-iframe-player_files/download_dialog.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="./crp-iframe-player_files/js"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-154158844-1');
+	</script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script>
+	<script src="./crp-iframe-player_files/jquery.min.js.download"></script>
+	<script src="./crp-iframe-player_files/jwplayer.js.download"></script>
+	<script src="./crp-iframe-player_files/player.js.download"></script>
+</head>
+<body>
+	<div class="loading_container">
+		<div class="loading_icon">
+			<svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling" style="background: none;">
+				<circle cx="50" cy="50" fill="none" ng-attr-stroke="{{config.color}}" ng-attr-stroke-width="{{config.width}}" ng-attr-r="{{config.radius}}" ng-attr-stroke-dasharray="{{config.dasharray}}" stroke="#ffffff" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(159.051 50 50)">
+					<animatetransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animatetransform>
+				</circle>
+			</svg>
+		</div>
+		<div class="loading_text_container">
+			<div class="loading_text">Seu video iniciara em instantes (^-^)<span class="corta_linha"></span>Aguardando dados da stream..</div>
+		</div>
+	</div>
+	<div class="modal" style="transform: translate3d(0px, 0px, 0px);visibility: hidden;">
+		   <button class="close-modal">×</button>
+		   <div class="download-item">
+		   	<span class="partdditem hdlabel not-copyable"><sup>HD</sup></span>
+		   	<span class="partdditem quality not-copyable">1080p</span>
+		   	<span id="1080p_down_size" class="partdditem size not-copyable">0 MB</span>
+		   	<a id="1080p_down_url" class="partdditem down-icon" href="javascript:void(0);" target="_top" download=""></a>
+		   </div>
+		   <div class="download-item">
+		   	<span class="partdditem hdlabel not-copyable"><sup>HD</sup></span>
+		   	<span class="partdditem quality not-copyable">720p</span>
+		   	<span id="720p_down_size" class="partdditem size not-copyable">0 MB</span>
+		   	<a id="720p_down_url" class="partdditem down-icon" href="javascript:void(0);" target="_top" download=""></a>
+		   </div>
+		   <div class="download-item">
+		   	<span class="partdditem hdlabel not-copyable"><sup></sup></span>
+		   	<span class="partdditem quality not-copyable">480p</span>
+		   	<span id="480p_down_size" class="partdditem size not-copyable">0 MB</span>
+		   	<a id="480p_down_url" class="partdditem down-icon" href="javascript:void(0);" target="_top" download=""></a>
+		   </div>
+		   <div class="download-item">
+		   	<span class="partdditem hdlabel not-copyable"><sup></sup></span>
+		   	<span class="partdditem quality not-copyable">360p</span>
+		   	<span id="360p_down_size" class="partdditem size not-copyable">0 MB</span>
+		   	<a id="360p_down_url" class="partdditem down-icon" href="javascript:void(0);" target="_top" download=""></a>
+		   </div>
+		   <div class="download-item">
+		   	<span class="partdditem hdlabel not-copyable"><sup></sup></span>
+		   	<span class="partdditem quality not-copyable">240p</span>
+		   	<span id="240p_down_size" class="partdditem size not-copyable">0 MB</span>
+		   	<a id="240p_down_url" class="partdditem down-icon" href="javascript:void(0);" target="_top" download=""></a>
+		   </div>
+	</div>
+	<div id="player_div"></div>
+
+
+</body></html>
